@@ -117,7 +117,25 @@
           </div>
         </form>
 
-        <div class="result"></div>
+        <div class="result">
+          <div class="result__tip-amount">
+            <p>
+              Tip Amount<span class="sr-only"> per person</span>
+              <span aria-hidden="true">/ person</span>
+            </p>
+            <p id="result-tip-amount" class="result__tip-amount-value">$0.00</p>
+          </div>
+
+          <div class="result__total">
+            <p>
+              Total<span class="sr-only"> per person</span>
+              <span aria-hidden="true">/ person</span>
+            </p>
+            <p id="result-total" class="result__total-value">$0.00</p>
+          </div>
+
+          <button type="button" class="reset-btn">Reset</button>
+        </div>
       </article>
     </main>
   </body>
