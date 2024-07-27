@@ -75,3 +75,67 @@ button {
   white-space: nowrap;
   width: 1px;
 }
+
+/* BODY */
+
+body {
+  font-family: var(--ff-space-mono);
+  font-weight: var(--fw-bold);
+  background: hsl(var(--clr-bg));
+}
+
+.logo-wrapper {
+  margin-top: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 2.5rem;
+  background: hsl(var(--clr-white));
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 1.5rem;
+}
+
+.form {
+  padding: 0.5rem;
+}
+
+.form-group:nth-child(2) {
+  margin-block: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+label,
+legend {
+  color: hsl(var(--clr-secondary));
+}
+
+legend {
+  margin-bottom: 1rem;
+}
+
+label:has(input[type="radio"]) {
+  font-size: 1.5rem;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  background: hsl(var(--clr-cyan-light));
+  padding-inline-start: 1.0625rem;
+  border-radius: 0.375rem;
+  margin-top: 0.375rem;
+}
+
+.form-control {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: right;
+  color: hsl(var(--clr-primary));
+  padding: 0.375rem;
+  padding-inline-end: 1.0625rem;
+}
